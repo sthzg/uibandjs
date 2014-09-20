@@ -1,0 +1,15 @@
+{
+  "name": "uiband",
+  "version": "0.0.0",
+  "authors": [
+    "sthzg <sthzg@gmx.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

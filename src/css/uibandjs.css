@@ -1,0 +1,159 @@
+.fs_iblock {
+  display: inline-block;
+}
+.fs_list-unstyled {
+  list-style-type: none;
+  list-style-image: none;
+}
+.ui-state-highlight {
+  height: 135px;
+  line-height: 1.2em;
+  border: 2px dashed rgba(37, 59, 118, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.filename-label {
+  font-size: 9px;
+  line-height: 1.2em;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #e6e6e6;
+  display: inline-block;
+  padding: 0 6px;
+  color: #969696;
+}
+a.naked {
+  text-decoration: none !important;
+  font-size: 9px;
+}
+.control-group .controls i {
+  display: inline-block;
+  text-shadow: 1px 1px 1px white !important;
+  font-size: 12px;
+}
+i.fa-times-circle {
+  color: #969696;
+}
+i.fa-check-circle {
+  color: lightseagreen;
+}
+tr.selected i.fa-times-circle,
+tr.selected i.fa-check-circle {
+  color: white;
+}
+.uib-uiband {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  min-height: 24px;
+  background-color: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 -3px 20px rgba(60, 60, 60, 0.3);
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+.uib-uiband ul,
+.uib-uiband li {
+  list-style-type: none;
+  list-style-image: none;
+}
+.uib-uiband ul {
+  text-align: center;
+}
+.uib-uiband li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px;
+  padding: 0;
+}
+.uib-uiband li.fs-feature-title {
+  margin-right: 12px;
+  color: #e6e6e6;
+  font-weight: bold;
+  font-size: 20px;
+}
+.uib-uiband li.fs-inline-help {
+  margin-right: 4px;
+}
+.uib-uiband li.fs-inline-help i {
+  font-size: 24px;
+  color: #dcdcdc;
+  padding-top: 3px;
+}
+.uib-uiband li a {
+  display: block;
+  padding: 4px 12px;
+  border: 1px solid #e6e6e6;
+  background-color: #fafafa;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px white;
+}
+.uib-uiband li a.ui-lock {
+  opacity: .5;
+  color: #282828;
+}
+.uib-uiband .uib-widget {
+  overflow: hidden;
+  height: 30px;
+}
+.uib-uiband .uib-widget-menu li {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #646464;
+}
+.uib-uiband .uib-widget-menu li.active {
+  color: white;
+  background-color: #3399b7;
+}
+.uib-uiband .uib-widget-menu li:hover {
+  cursor: pointer;
+}
+.uib-region {
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.uib-region-west {
+  width: 10%;
+  padding-left: 16px;
+}
+.uib-region-middle {
+  width: 80%;
+}
+.uib-region-east {
+  width: 10%;
+  padding-right: 30px;
+}
+.uib-notice-container {
+  text-align: right;
+  color: #969696;
+  font-size: 11px;
+  font-family: Arial;
+  padding-top: 6px;
+}
+.uib-notice-container i,
+.uib-notice-container span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.uib-notice-container i {
+  color: #505050;
+  font-size: 24px;
+  margin-right: 6px;
+}
+.uib-notice-container i.fa-check {
+  color: #4682b4;
+}
+.uib-notice-container i.fa-check-circle {
+  color: #4682b4;
+}

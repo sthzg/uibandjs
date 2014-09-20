@@ -1,0 +1,182 @@
+// _____________________________________________________________________________
+//                                                                       Helpers
+.fs_iblock { display: inline-block; }
+.fs_list-unstyled {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.ui-state-highlight {
+  height: 135px;
+  line-height: 1.2em;
+  border: 2px dashed rgba(37, 59, 118, .3);
+  background-color: rgba(255,255,255,.8);
+}
+
+.filename-label {
+  font-size: 9px;
+  line-height: 1.2em;
+  background-color: rgb(255,255,255);
+  border-radius: 2px;
+  border: 1px solid rgb(230,230,230);
+  display: inline-block;
+  padding: 0 6px;
+  color: rgb(150,150,150);
+}
+
+a.naked {
+  text-decoration: none !important;
+  font-size: 9px;
+}
+
+.control-group .controls i {
+  .fs_iblock();
+  text-shadow: 1px 1px 1px white !important;
+  font-size: 12px;
+}
+
+// _____________________________________________________________________________
+//                                                                         Icons
+i.fa-times-circle { color: rgb(150,150,150); }
+i.fa-check-circle { color: lightseagreen; }
+tr.selected i.fa-times-circle,
+tr.selected i.fa-check-circle {
+  color: white;
+}
+
+// _____________________________________________________________________________
+//                                                                       UI Band
+.uib-uiband {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  min-height: 24px;
+  background-color: rgba(255,255,255,.94);
+  box-shadow: 0 -3px 20px rgba(60,60,60,.3);
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+
+  ul, li { .fs_list-unstyled(); }
+
+  ul {
+    text-align: center;
+  }
+
+  li {
+    .fs_iblock();
+    vertical-align: middle;
+    margin: 2px;
+    padding: 0;
+
+    &.fs-feature-title {
+      margin-right: 12px;
+      color: rgb(230,230,230);
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &.fs-inline-help {
+      margin-right: 4px;
+      i {
+        font-size: 24px;
+        color: rgb(220,220,220);
+        padding-top: 3px;  // nudge it a little to be optically centered
+      }
+    }
+
+    a {
+      display: block;
+      padding: 4px 12px;
+      border: 1px solid rgb(230,230,230);
+      background-color: rgb(250,250,250);
+      text-decoration: none;
+      text-shadow: 1px 1px 1px white;
+
+      &.ui-lock {
+        opacity: .5;
+        color: rgb(40,40,40);
+      }
+    }
+
+  }
+
+  .uib-widget {
+    overflow: hidden;
+    height: 30px;
+  }
+
+  .uib-widget-menu {
+    li {
+      .fs_iblock();
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: rgb(100,100,100);
+
+      &.active {
+        color: white;
+        background-color: #3399b7;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// _____________________________________________________________________________
+//                                                                       Regions
+.uib-region {
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.uib-region-west {
+  width: 10%;
+  padding-left: 16px;
+}
+
+.uib-region-middle {
+  width: 80%;
+}
+
+.uib-region-east {
+  width: 10%;
+  padding-right: 30px;
+}
+
+// _____________________________________________________________________________
+//                                                                        Notice
+.uib-notice-container {
+  text-align: right;
+  color: rgb(150,150,150);
+  font-size: 11px;
+  font-family: Arial;
+  padding-top: 6px;
+
+  i, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  i {
+    color: rgb(80,80,80);
+    font-size: 24px;
+    margin-right: 6px;
+    &.fa-check { color: #4682b4; }
+    &.fa-check-circle { color: #4682b4; }
+  }
+
+}
