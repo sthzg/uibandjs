@@ -124,9 +124,34 @@ var uiband = {
         }
     },
 
-
+    /**
+     * Removes $widget with given id from the uiband.
+     *
+     * @param id
+     */
     remove_widget: function (id) {
-        // TODO
+
+        // Remove from widget menu.
+        var $menu_item = this.$uib_widget_menu.find('li[data-target="'+id+'"]');
+        $menu_item.remove();
+
+        // Call destroy on the widget and remove from registry.
+        if ( typeof this.widget_registry.widgets[id] != 'undefined')
+        {
+            this.widget_registry.widgets[id].controller.destroy();
+            delete this.widget_registry.widgets[id];
+        }
+    },
+
+    destroy: function() {
+        var self = this;
+
+        // Call remove_widget for all widgets that are currently registered.
+        $.each(this.widget_registry.widgets, function(key, widget){
+            self.remove_widget(key);
+        });
+
+        this.$uib.remove();
     },
 
     /**
